@@ -1,2 +1,23 @@
-# Project exclude paths
-/node_modules/
+# dependecies installed by npm
+node_modules
+web_modules
+
+# build artefacts
+.build
+build
+dist
+
+# secrets
+.env
+
+# logs
+*.log
+
+# macOS related files
+.DS_Store
+
+# version manager
+.tool-versions
+
+# Local Netlify folder
+.netlify
