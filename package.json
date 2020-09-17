@@ -1,0 +1,75 @@
+{
+  "name": "dyyy.dev",
+  "version": "0.0.1",
+  "description": "dyyy.dev website",
+  "engines": {
+    "node": "12.x.x",
+    "npm": "6.x.x"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:stefanfrede/11st-starter-kit.git"
+  },
+  "keywords": [
+    "11ty",
+    "snowpack",
+    "tailwindcss"
+  ],
+  "author": {
+    "name": "Alex Danylyschyn",
+    "email": "alex@dyyy.dev"
+  },
+  "license": "MIT",
+  "homepage": "https://dyyy.dev",
+  "browserslist": [
+    "defaults",
+    "maintained node versions",
+    "> 5%"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "clean": "rimraf build && rimraf dist",
+    "start": "run-s clean start:*",
+    "start:snowpack": "snowpack dev",
+    "build": "run-s clean build:*",
+    "build:snowpack": "snowpack build",
+    "test": "echo \"This template does not include a test runner by default.\" && exit 1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "browserslist": "^4.14.2",
+    "core-js": "^3.6.5",
+    "eslint": "^7.9.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-html": "^6.1.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.1.2",
+    "stylelint": "^13.7.1",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-recommended": "^3.0.0",
+    "stylelint-order": "^4.1.0"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^0.11.0",
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "@snowpack/plugin-build-script": "^2.0.7",
+    "@snowpack/plugin-run-script": "^2.1.2",
+    "@snowpack/plugin-webpack": "^2.0.12",
+    "@tailwindcss/typography": "^0.2.0",
+    "canvas-confetti": "^1.2.0",
+    "cssnano": "^4.1.10",
+    "eleventy-plugin-error-overlay": "^0.1.2",
+    "liquidjs": "^9.15.0",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.0.3",
+    "postcss-cli": "^7.1.2",
+    "postcss-import": "^12.0.1",
+    "postcss-preset-env": "^6.7.0",
+    "rimraf": "^3.0.2",
+    "snowpack": "^2.11.1",
+    "tailwindcss": "^1.8.10"
+  }
+}
