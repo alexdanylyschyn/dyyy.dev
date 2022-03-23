@@ -2,13 +2,14 @@
 layout: default
 ---
 
-<main class="container mx-auto flex flex-col flex-wrap items-center px-6 pt-24 md:flex-row md:pt-48">
-  <header class="flex w-full flex-col justify-center overflow-y-hidden lg:items-start xl:w-2/5">
-    <h1 class="my-4 text-center text-3xl font-bold leading-tight text-blue-500 md:text-left md:text-5xl">
-      {{ metadata.title }}
+<main class="container flex flex-col flex-wrap items-center px-6 pt-24 mx-auto md:flex-row md:pt-48">
+  <header class="flex flex-col justify-center w-full overflow-y-hidden lg:items-start xl:w-2/5">
+    <a href="/"><img src="{{ metadata.logo }}" /></a>
+    <h1 class="my-4 text-3xl font-bold leading-tight text-center md:text-left md:text-5xl">
+      Alexander Danylyschyn
     </h1>
-    <p class="mb-6 text-center text-base leading-normal md:text-left md:text-2xl">{{ metadata.description }}</p>
-    <a href="https://github.com/distantcam/windty">
+    <p class="mb-6 text-base leading-normal text-center md:text-left md:text-2xl">{{ metadata.description }}</p>
+    <a href="https://github.com/alexdanylyschyn">
       <svg class="h-12" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <title>GitHub icon</title>
         <path

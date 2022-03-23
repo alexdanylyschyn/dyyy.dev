@@ -1,6 +1,10 @@
 const fs = require("fs");
 const htmlmin = require("html-minifier");
 
+const eleventyGoogleFontsShortcode = async (value) => {
+  return await createInlineCss(value);
+}
+
 module.exports = function(eleventyConfig) {
 
   if (process.env.ELEVENTY_PRODUCTION) {

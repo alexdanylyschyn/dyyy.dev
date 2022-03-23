@@ -2,42 +2,52 @@
 <html lang="en">
   <head>
     <!-- https://github.com/joshbuchea/HEAD -->
-
     <!-- Recommended -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <meta charset="utf-8"/>
+    <meta
+    name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
     <!-- Meta -->
-    <meta name="description" content="{{ metadata.description }}" />
-    <meta name="generator" content="11ty" />
+    <meta name="description" content="{{ metadata.description }}"/>
+    <meta name="generator" content="11ty"/>
 
     <!-- Icons -->
-    <!-- https://favicon.io/ -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="{{ '/apple-touch-icon.png' | url }}"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="{{ '/favicon-32x32.png' | url }}"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="{{ '/favicon-16x16.png' | url }}"
-    />
-    <link rel="manifest" href="{{ '/site.webmanifest' | url }}" />
-
+    <!-- https://favicon.io/ --> <link rel="apple-touch-icon" sizes="180x180" href="{{ '/apple-touch-icon.png' | url }}"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/favicon-32x32.png' | url }}"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ '/favicon-16x16.png' | url }}"/>
+    <link rel="manifest" href="{{ '/site.webmanifest' | url }}"/>
     <title>{{ title or metadata.title }}</title>
-
-    <link rel="stylesheet" href="{{ '/site.css' | url }}" />
+     <!-- Fonts -->
+    <style>
+      @font-face {
+        font-family: 'Cabin';
+        font-style: normal;
+        font-weight: 400;
+        src: url("{{ '/fonts/cabin-v18-latin-ext_latin-regular.woff2' | url }}") format('woff2');
+      }
+      @font-face {
+        font-family: 'Cabin';
+        font-style: normal;
+        font-weight: 700;
+        src: url("{{ '/fonts/cabin-v18-latin-ext_latin-700.woff2' | url }}") format('woff2');
+      }
+    </style>
+    <link rel="stylesheet" href="{{ '/site.css' | url }}"/>
   </head>
-
   <body class="font-sans leading-normal tracking-normal text-gray-900">
     {{ content | safe }}
+    <footer class="container flex px-6 py-24 mx-auto space-x-8">
+      <span>&copy; 2022 dyyy.dev</span>
+      <nav>
+        <ul class="flex space-x-4 font-bold">
+          <li>
+            <a href="/legal">Legal</a>
+          </li>
+          <li>
+            <a href="/privacy">Privacy</a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
   </body>
 </html>
